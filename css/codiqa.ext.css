@@ -3,9 +3,9 @@
 	margin: auto auto;
 }
 
-.title {
-	text-align: center;
+h5#title{
+	text-decoration: none;
+	color: white;
 }
-
 
 /* Put your custom CSS here */
