@@ -8,12 +8,11 @@ $(document).ready(function(){
 			url: url,
 			dataType: 'jsonp',
 			success: function(data) {
-				console.lot(data);
+				console.log(data);
+
+				$("#item").removeClass("hidden"); //move this up once .get is working
 			}
 		})
-
-			$("#item").removeClass("hidden"); //move this up once .get is working
-			$("#tag-btn").attr("data-theme", "c");
 	});
 
 	$("#submit-id").on("click", function(event){
