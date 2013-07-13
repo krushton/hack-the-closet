@@ -4,12 +4,21 @@ $(document).ready(function(){
 		var url = "http://vwala.pythonanywhere.com/items/" + $('input[id=tag-num]').val();
 		console.log(url);
 
-		$.get(url, function(data, textStatus, jqXHR){
+		$.ajax({
+			url: url,
+			dataType: 'jsonp',
+			success: function(data) {
+				console.lot(data);
+			}
+		})
 
-
-		});
 			$("#item").removeClass("hidden"); //move this up once .get is working
 			$("#tag-btn").attr("data-theme", "c");
+	});
+
+	$("#submit-id").on("click", function(event){
+		$.mobile.changePage("#page2");
+
 	});
 
 })

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  
+  
+  <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="css/codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="jquery-mobile/jquery-1.10.2.min.js"></script>
+  <script src="jquery-mobile/jquery.mobile-1.3.1.min.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="js/codiqa.ext.js"></script>
+   
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <h5 id="title">
+            <a href="index.html" data-direction="reverse" data-transition="slide" style="text-decoration: none; color: white;">vwa-la</a>
+        </h5>
+    </div>
+
+    <div data-role="navbar" data-iconpos="bottom">
+        <ul>
+            <li>
+                <a href="" data-transition="slide" data-icon="search" class="ui-btn-active ui-state-persist">
+                    Tag
+                </a>
+            </li>
+            <li>
+                <a href="#" data-transition="slide" data-icon="grid">
+                    Choose
+                </a>
+            </li>
+            <li>
+                <a href="#" data-transition="slide" data-icon="check">
+                    Wear
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div data-role="content">
+      <label for="textinput1">
+          Item ID Number:
+      </label>
+      <input name="tag-num" id="tag-num" placeholder="12345" value="" type="number" />
+      <input id="tag-btn" name="tag-btn" type="submit" data-transition="slide" data-theme="e" value="Find Item"> </input>
+
+      <div id="item" class="hidden">
+        <h4 id="item-title">Item Title</h4>
+        <div style="width: 150px; height: 150px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8; margin: auto auto;">
+          <img src="http://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+        </div>
+        <p id="item-desc">
+          Direct trade freegan YOLO pitchfork fashion axe, keytar flannel. Viral consectetur brunch ethnic letterpress raw denim, shoreditch leggings actually 8-bit direct trade seitan retro. 
+        </p>
+
+          <input id="submit-id" name="submit-id" type="button" data-transition="slide" data-theme="e" value="Find Suggestions"> </input>
+
+      </div>
+    </div>
+</div>
+
+
+<!-- item chooser -->
+<div data-role="page" id="page2">
+    <div data-theme="a" data-role="header">
+        <h5>
+            <a href="index.html" data-direction="reverse" data-transition="slide" style="text-decoration: none; color: white;">vwa-la</a>
+        </h5>
+    </div>
+
+    <div data-role="navbar" data-iconpos="bottom">
+        <ul>
+            <li>
+                <a href="tag-manual.html" data-direction="reverse" data-transition="slide" data-icon="search">
+                    Tag
+                </a>
+            </li>
+            <li>
+                <a href="#" data-transition="slide" data-icon="grid" class="ui-btn-active ui-state-persist">
+                    Choose
+                </a>
+            </li>
+            <li>
+                <a href="#" data-transition="slide" data-icon="check">
+                    Wear
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div data-role="content">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Tops
+                </h3>
+                <div class="checkboxes">
+                    <input id="tops1" name="tops1" type="checkbox" data-mini="true">
+                        <label for="tops1">
+                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image">
+                        </label>
+                    </input>
+                    <input id="tops2" name="tops2" type="checkbox" data-mini="true">
+                        <label for="tops2">
+                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image">
+                        </label>
+                    </input>
+                </div>
+            </div>
+
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Bottoms
+                </h3>
+                <div class="checkboxes">
+                    <input id="bottoms1" name="bottoms1" type="checkbox" data-mini="true">
+                        <label for="bottoms1">
+                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image">
+                        </label>
+                    </input>
+                    <input id="bottoms2" name="bottoms2" type="checkbox" data-mini="true">
+                        <label for="bottoms2">
+                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image">
+                        </label>
+                    </input>
+                </div>
+            </div>   
+
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Accessories
+                </h3>
+                <div id="checkboxes">
+                    <input id="acc1" name="acc1" type="checkbox" data-mini="true">
+                        <label for="acc1">
+                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image">
+                        </label>
+                    </input>
+                    <input id="acc2" name="acc2" type="checkbox" data-mini="true">
+                        <label for="acc2">
+                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image">
+                        </label>
+                    </input>
+                </div>
+            </div>   
+
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Footwear
+                </h3>
+                <div id="checkboxes">
+                    <input id="shoe1" name="shoe1" type="checkbox" data-mini="true">
+                        <label for="shoe1">
+                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image">
+                        </label>
+                    </input>
+                    <input id="shoe2" name="shoe2" type="checkbox" data-mini="true">
+                        <label for="shoe2">
+                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image">
+                        </label>
+                    </input>
+                </div>
+            </div> 
+
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Outerwear
+                </h3>
+                <div id="checkboxes">
+                    <input id="outer1" name="outer1" type="checkbox" data-mini="true">
+                        <label for="outer1">
+                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image">
+                        </label>
+                    </input>
+                    <input id="outer2" name="outer2" type="checkbox" data-mini="true">
+                        <label for="outer2">
+                            <img src="http://codiqa.com/static/images/v2/image.png" alt="image">
+                        </label>
+                    </input>
+                </div>
+            </div> 
+
+        </div> 
+
+        <input id="outfit-btn" name="outfit-btn" type="button" data-transition="slide"  data-theme="e" value="Wear it!"> </input>
+    </div>
+</div>
+
+<!-- outfit -->
+<div data-role="page" id="page3">
+    <div data-theme="a" data-role="header">
+      <h5 id="title">
+          <a href="index.html" data-direction="reverse" data-transition="slide" style="text-decoration: none; color: white;">vwa-la</a>
+      </h5>
+    </div>
+
+    <div data-role="navbar" data-iconpos="bottom">
+        <ul>
+            <li>
+                <a href="" data-transition="slide" data-icon="search" class="ui-btn-active ui-state-persist">
+                    Tag
+                </a>
+            </li>
+            <li>
+                <a href="#" data-transition="slide" data-icon="grid">
+                    Choose
+                </a>
+            </li>
+            <li>
+                <a href="#" data-transition="slide" data-icon="check">
+                    Wear
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div data-role="content">
+    </div>
+
+</div>
+
+</body>
+</html>
