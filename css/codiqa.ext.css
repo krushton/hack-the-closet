@@ -8,8 +8,11 @@ h5#title{
 	color: white;
 }
 
+h4.item-title{
+	text-align: center;
+}
+
+
 .hidden {
 	display: none;
 }
-
-/* Put your custom CSS here */
