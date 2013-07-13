@@ -1,0 +1,5 @@
+ID
+name
+short desc
+category [shirt, cardigan, sweater, jeans, trousers, skirt, jacket, dress, sandals, flats, loafers, runners, jewelry]
+color
