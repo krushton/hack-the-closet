@@ -8,5 +8,8 @@ h5#title{
 	color: white;
 }
 
+.hidden {
+	display: none;
+}
 
 /* Put your custom CSS here */
